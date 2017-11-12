@@ -23,7 +23,66 @@
 			<h1 class="page-title">Магазин готовых шаблонов</h1>
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
-				<!--Здесь будет форма-->
+				<div class="sort">
+					<h3 class="sort-title">Сортировать:</h3>
+					<a class="sort active" href="#">По цене</a>
+					<a class="sort" href="#">По типу</a>
+					<a class="sort" href="#">По названию</a>
+					<span>down</span>
+					<span>up</span>
+				</div>
+				<form class="filters" method="get" action="https://echo.htmlacademy.ru" oninput="costoutput.value=cost.value">
+					<fieldset>
+						<legend>Стоимость:</legend>
+						<input type="range" id="cost" name="cost" min="0" max="25000">
+						<p>От <span>0</span> До
+						<output id="costoutput" name="costoutput">15000</output>
+						</p>
+					</fieldset>
+					<fieldset>
+						<legend>Сетка:</legend>
+						<ul class="filter-items">
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>	
+								<label for="filter-adaptive">Адаптивная</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fix" id="filter-fix">
+								<label for="filter-fix">Фиксированная</label>
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="rubber" id="filter-rubber">
+								<label for="filter-rubber">Резиновая</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Особенности:</legend>
+						<ul class="filter-items">
+							<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+							<label for="filter-slider">Слайдер</label>
+							</li>
+							<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantage-block" id="filter-advantage-block">
+							<label for="filter-advantage-block">Блок преимуществ</label>
+						  </li>
+							<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news"  id="filter-news" checked>
+							<label for="filter-news">Новости</label>
+							</li>
+							<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+							<label for="filter-gallery">Галерея</label>
+							</li>
+							<li class="filter-option">
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
+							<label for="filter-basket">Корзина</label>
+							</li>
+						</ul>	
+					</fieldset>
+					<button type="submit" class="filter-button button">Показать</button>
+				</form>
 			</section>
 			<section class="catalog">
 				<h2 class="visually-hidden">Список готовых шаблонов</h2>
@@ -87,8 +146,8 @@
 		</main>
 		<footer class="main-footer">
 			<!--Здесь будет карта-->
-			<img src="img/map.jpg" width="1440" height="416">
-      <img src="img/map-marker.png" width="367" height="190">
+			<img src="img/map.jpg" width="1440" height="416" alt="Карта">
+      <img src="img/map-marker.png" width="367" height="190" alt="Местонахождение дизайн-студии Нёрдс">
 			<h2>Nёrds Design Studio</h2>
 			<p class="main-contacts">
 				191186, Санкт-Петербург,<br>
@@ -108,8 +167,22 @@
 		</footer>
 		<section class="modal modal-write">
 			<h2>Напишите нам</h2>
-			<!--Здесь будет форма-->
-			<span class="modal-close">x</span>
+			<form class="user" method="post" action="https://echo.htmlacademy.ru">
+   			<p class="modal-item">
+   				<label for="user-name">Ваше имя:</label>
+   				<input id="user-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+   			</p>
+   			<p class="modal-item">
+   				<label for="user-email">Ваш e-mail:</label>
+   				<input id="user-email" type="text" name="email" placeholder="Для отправки ответа">
+   			</p>
+   			<p class="modal-item">
+   				<label for="user-message">Текст письма:</label>
+   				<textarea id="user-message" name="message" rows="5" placeholder="В свободной форме"></textarea>
+   			</p>
+   			<button type="submit">Отправить</button>
+   			<button class="modal-close" type="button">Закрыть</button>
+   		</form>
 	  </section>
 	</body>
 </html>
