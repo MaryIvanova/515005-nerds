@@ -23,24 +23,25 @@
 			<h1 class="page-title">Магазин готовых шаблонов</h1>
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
-				<div class="sort">
+				<div class="sort-list">
 					<h3 class="sort-title">Сортировать:</h3>
-					<a class="sort active" href="#">По цене</a>
-					<a class="sort" href="#">По типу</a>
-					<a class="sort" href="#">По названию</a>
-					<span>down</span>
-					<span>up</span>
+					<ul class="sort-items">
+						<li class="sort active">По цене</li>
+						<li class="sort"><a href="#">По типу</a></li>
+						<li class="sort"><a href="#">По названию</a></li>
+						<li class="sort-change active">down</li>
+						<li class="sort-change"><a href="#">up</a></li>
+					</ul>
+				</div>
+				<div class="cost">
+					<h3 class="cost-title">Стоимость:</h3>
+					<button><img src="img/filter-button.svg" width="20" height="23" alt="Кнопка"></button>
+					<button><img src="img/filter-button.svg" width="20" height="23" alt="Кнопка"></button>
+					<p>От 0 До 15000</p>
 				</div>
 				<form class="filters" method="get" action="https://echo.htmlacademy.ru" oninput="costoutput.value=cost.value">
-					<fieldset>
-						<legend>Стоимость:</legend>
-						<input type="range" id="cost" name="cost" min="0" max="25000">
-						<p>От <span>0</span> До
-						<output id="costoutput" name="costoutput">15000</output>
-						</p>
-					</fieldset>
-					<fieldset>
-						<legend>Сетка:</legend>
+					<fieldset class="filters-list">
+						<legend class="filter-title">Сетка:</legend>
 						<ul class="filter-items">
 							<li class="filter-option">
 								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>	
@@ -56,28 +57,28 @@
 							</li>
 						</ul>
 					</fieldset>
-					<fieldset>
-						<legend>Особенности:</legend>
+					<fieldset class="filters-list">
+						<legend class="filter-title">Особенности:</legend>
 						<ul class="filter-items">
 							<li class="filter-option">
-							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
-							<label for="filter-slider">Слайдер</label>
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+								<label for="filter-slider">Слайдер</label>
 							</li>
 							<li class="filter-option">
-							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantage-block" id="filter-advantage-block">
-							<label for="filter-advantage-block">Блок преимуществ</label>
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantage-block" id="filter-advantage-block">
+								<label for="filter-advantage-block">Блок преимуществ</label>
 						  </li>
 							<li class="filter-option">
-							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news"  id="filter-news" checked>
-							<label for="filter-news">Новости</label>
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news"  id="filter-news" checked>
+								<label for="filter-news">Новости</label>
 							</li>
 							<li class="filter-option">
-							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
-							<label for="filter-gallery">Галерея</label>
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+								<label for="filter-gallery">Галерея</label>
 							</li>
 							<li class="filter-option">
-							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
-							<label for="filter-basket">Корзина</label>
+								<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
+								<label for="filter-basket">Корзина</label>
 							</li>
 						</ul>	
 					</fieldset>
@@ -131,7 +132,7 @@
 						<a href="kvast.html"><img src="img/img-kvast.jpg" width="360" height="576" alt="Промо-сайт производителя крафтового кваса"></a>
 						<section class="modal modal-buy">
 							<h2>Кваст</h2>
-							<p>Промо-сайт производителя крафтового кваса/p>
+							<p>Промо-сайт производителя крафтового кваса</p>
 							<a href="#" class="button">9900 руб.</a>
 						</section>
 					</li>
