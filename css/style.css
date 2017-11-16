@@ -1,0 +1,355 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #283136;
+
+	background-color: #ffffff;
+}
+a {
+	text-decoration: none;
+}
+.logo a:hover,
+.logo a:focus {
+	opacity: 0.8;
+}
+.logo a:active {
+	opacity: 0.3;
+}
+.main-navigation {
+	font-size: 16px; 
+	line-height: 30px;
+	color: #000000;
+	background-color: #eeeeee;
+}
+.site-navigation,
+.user-navigation {
+	list-style: none;
+}
+.site-navigation a,
+.user-navigation a {
+	color: #000000;
+}
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+	color: #fb565a;	
+}
+.site-navigation a:active,
+.user-navigation a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+.site-navigation-current {
+	border-bottom: 1px solid #fb565a;
+}
+.page-title {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+	color: #000000;
+	background-color: #eeeeee;
+	margin: 0;
+}
+.slider-group {
+	background-color: #eeeeee;
+	padding-top: 5px;
+}
+.slider-list {
+	list-style: none;
+}
+.slider-title {
+	font-size: 55px;
+	line-height: 55px;
+	color: #000000;
+	font-weight: 500;
+}
+.sort-title {
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #000000;
+}
+.sort-items {
+	list-style: none;
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+.sort-items .active a {
+	color: #000000;
+}
+.sort-items a {
+	color: rgba(0, 0, 0, 0.3);
+}
+.sort-items a:hover,
+.sort-items a:focus {
+	color: rgba(0, 0, 0, 0.6);
+}
+.sort-items a:active {
+	color: #000000;
+}
+.cost-title,
+.filter-title {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+}
+.cost p {
+	line-height: 22px;
+	text-transform: uppercase;
+}
+.filters-list {
+	border: none;
+}
+.filter-items {
+	list-style: none;
+	line-height: 20px;
+}
+.filter-input:hover + label,
+.filter-input:focus + label {
+	color: #000000;
+}
+.filter-input:disabled + label {
+	color: rgba(40, 49, 54, 0.3);
+}
+.filter-button {
+	line-height: 18px;
+	color: #000000;
+	font-weight: 500;
+	text-transform: uppercase;
+	background-color: #eeeeee;
+	border: none;
+	border-radius: 2px;
+}
+.filter-button:hover,
+.filter-button:focus {
+	background-color: #dfdfdf;
+}
+.filter-button:active {
+	background-color: #d5d5d5;
+	color: rgba(0, 0, 0, 0.3);
+}
+.services-list {
+	list-style: none;
+}
+.services-item h3 {
+	font-size: 24px;
+	lihe-height: 30px;
+	color: #000000;
+	text-transform: uppercase;
+	font-weight:700;
+}
+.button {
+	font: inherit;
+
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
+	line-height: 18px;
+	font-weight: 500;
+
+	background-color: #fb565a;
+	border-radius: 2px;
+}
+.button:hover,
+.button:focus {
+	background-color: #e74246;
+}
+.button:active {
+	background-color: #d7373b;
+	color: rgba(255, 255, 255, 0.3);
+}
+.button-green {
+	background-color: #00ca74;
+}
+.button-green:hover,
+.button-green:focus {
+	background-color: #00bc6c;
+}
+.button-green:active{
+	background-color: #00aa62;
+	color: rgba(255, 255, 255, 0.3);
+}
+.button-yellow {
+	background-color: #efc84a;
+}
+.button-yellow:hover,
+.button-yellow:focus {
+	background-color: #eab534;
+}
+.button-yellow:active {
+	background-color: #e5a722;
+	color: rgba(255, 255, 255, 0.3);
+}
+.catalog-list {
+	list-style: none;
+}
+.modal-buy {
+	width: 360px;
+	height: 231px;
+	background-color: #eeeeee; 
+	text-align: center;
+	vertical-align: middle;
+}
+.modal-buy h3 {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #000000;
+}
+.modal-buy p {
+	line-height: 18px;
+	color: #666666;
+}
+.btn-modal:active {
+	color: #ffffff;	
+}
+.pagination-list {
+	list-style: none;	
+}
+.pagination-item a{
+	line-height: 18px;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #000000;
+	background-color: #eeeeee;
+}
+.pagination-item a:hover,
+.pagination-item a:focus {
+	background-color: #dfdfdf;
+}
+.pagination-item a:active {
+	color: rgba(0, 0, 0, 0.3);
+	background-color: #d5d5d5;
+}
+.pagination-item-current a {
+	background-color: #ffffff;
+	border: 1px solid #dbdbdb;
+	border-radius: 1px;
+}
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+	background-color: #ffffff;
+	border: 1px solid #dbdbdb;
+	border-radius: 1px;
+}
+.about-studio {
+	font-size: 45px;
+	line-height: 45px;
+	color: #000000;
+	font-weight: 500;
+}
+.about-us h3 {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: 700;
+}
+.orders-list {
+	list-style: none;
+}
+.table-title {
+	color: #000000;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.facts-percent {
+	font-size: 45px;
+	line-height: 10.06px;
+	font-weight: 700;
+	color: #000000;
+}
+.facts-conditions {
+	line-height: 18px;
+}
+.partners-list {
+	list-style: none;
+}
+.partners-list a {
+	opacity: 0.2;
+}
+.partners-list a:hover,
+.partners-list a:focus {
+	opacity: 100;
+}
+.partners-list a:active {
+	opacity: 0.1;
+}
+.main-footer h2 {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+}
+.main-contacts {
+	line-height: 18px;
+	color: #666666;
+}
+.footer-social {
+	list-style: none;
+}
+.main-footer h3 {
+	font-size: 36px;
+	line-height: 36px;
+	color: #000000;
+	font-weight: 700;
+}
+.footer-item {
+	line-height: 22px;
+	color: #444444;
+}
+.modal-write h2 {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+	color: #000000;
+}
+.user input[type="text"],
+.user textarea {
+	font: inherit;
+
+	line-height: 18px;
+	font-weight: 400;
+	color: rgba(68, 68, 68, 0.5);
+	background-color: transparent;
+	border: 1px solid rgba(68, 68, 68, 0.5);
+	border-radius: 2px;
+}
+.modal-item {
+	line-height: 18px;
+	font-weight: 700;
+	color: #000000;
+}
+.modal-item input:hover,
+.modal-item textarea:hover {
+	border: 1px solid rgba(68, 68, 68, 0.8);
+}
+.modal-item input:focus,
+.modal-item textarea:focus {
+	border: 1px solid #000000;
+}
+.modal-item input:invalid,
+.modal-item textarea:invalid {
+	border: 1px solid #e74246;
+}
+.user button[type="submit"] {
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
+	background-color: #fb565a;
+	border: none;
+	border-radius: 2px;
+}

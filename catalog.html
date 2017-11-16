@@ -3,10 +3,13 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Нёрдс</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
-			<nav class="main-navigation">
+			<nav class="main-navigation logo">
 				<a class="main-header-logo" href="index.html">
 					<img src="img/nerds-logo.svg"  alt="Логотип дизайн-студии Нёрдс" width="160" height="65">
 				</a>
@@ -16,7 +19,9 @@
 					<li><a class="site-navigation-current">Магазин</a></li>
 					<li><a class="site-navigation-item" href="contacts.html">Контакты</a></li>
 				</ul>
-				<div class="user-navigation">Корзина</div>
+				<div class="user-navigation">
+					<a class="basket-link" href="basket.html">Корзина</a>
+				</div>
 			</nav>
 		</header>
 		<main class="container">
@@ -52,7 +57,7 @@
 								<label for="filter-fix">Фиксированная</label>
 							</li>
 							<li class="filter-option">
-								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="rubber" id="filter-rubber">
+								<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="rubber" id="filter-rubber" disabled>
 								<label for="filter-rubber">Резиновая</label>
 							</li>
 						</ul>
@@ -82,7 +87,7 @@
 							</li>
 						</ul>	
 					</fieldset>
-					<button type="submit" class="filter-button button">Показать</button>
+					<button type="submit" class="filter-button">Показать</button>
 				</form>
 			</section>
 			<section class="catalog">
@@ -91,49 +96,49 @@
 					<li class="catalog-item">
 						<a href="sedona.html"><img src="img/img-sedona.jpg" width="360" height="576" alt="Информационный сайт для туристов Sedona"></a>
 						<section class="modal modal-buy">
-							<h2>Sedona</h2>
+							<h3>Sedona</h3>
 							<p>Информационный сайт для туристов</p>
-							<a href="#" class="button">9900 руб.</a>
+							<a href="#" class="button btn-modal">9900 руб.</a>
 						</section>
 					</li>
 					<li class="catalog-item">
 						<a href="pink.html"><img src="img/img-pink.jpg" width="360" height="576" alt="Продуктовый лендинг приложения для OS и Android"></a>
 						<section class="modal modal-buy">
-							<h2>Pink App</h2>
+							<h3>Pink App</h3>
 							<p>Продуктовый лендинг приложения для OS и Android</p>
-							<a href="#" class="button">9900 руб.</a>
+							<a href="#" class="button btn-modal">9900 руб.</a>
 						</section>
 					</li>
 					<li class="catalog-item">
 						<a href="borodinski.html"><img src="img/img-barbershop.jpg" width="360" height="576" alt="Барбершоп Бородинский"></a>
 						<section class="modal modal-buy">
-							<h2>Barbershop</h2>
+							<h3>Barbershop</h3>
 							<p>Сайт салоны красоты. Для мужчин, да.</p>
-							<a href="#" class="button">9900 руб.</a>
+							<a href="#" class="button btn-modal">9900 руб.</a>
 						</section>
 					</li>
 					<li class="catalog-item">
 						<a href="mishka.html"><img src="img/img-mishka.jpg" width="360" height="576" alt="Интернет-магазин вязаных игрушек"></a>
 						<section class="modal modal-buy">
-							<h2>Mishka</h2>
+							<h3>Mishka</h3>
 							<p>Интернет-магазин вязаных игрушек</p>
-							<a href="#" class="button">9900 руб.</a>
+							<a href="#" class="button btn-modal">9900 руб.</a>
 						</section>
 					</li>
 					<li class="catalog-item">
 						<a href="study.html"><img src="img/img-aplus.jpg" width="360" height="576" alt="Лендинг курсов повышения квалификации"></a>
 						<section class="modal modal-buy">
-							<h2>A Plus</h2>
+							<h3>A Plus</h3>
 							<p>Лендинг курсов повышения квалификации</p>
-							<a href="#" class="button">9900 руб.</a>
+							<a href="#" class="button btn-modal">9900 руб.</a>
 						</section>
 					</li>
 					<li class="catalog-item">
 						<a href="kvast.html"><img src="img/img-kvast.jpg" width="360" height="576" alt="Промо-сайт производителя крафтового кваса"></a>
 						<section class="modal modal-buy">
-							<h2>Кваст</h2>
+							<h3>Кваст</h3>
 							<p>Промо-сайт производителя крафтового кваса</p>
-							<a href="#" class="button">9900 руб.</a>
+							<a href="#" class="button btn-modal">9900 руб.</a>
 						</section>
 					</li>
 				</ul>
@@ -146,7 +151,6 @@
 			</section>
 		</main>
 		<footer class="main-footer">
-			<!--Здесь будет карта-->
 			<img src="img/map.jpg" width="1440" height="416" alt="Карта">
       <img src="img/map-marker.png" width="367" height="190" alt="Местонахождение дизайн-студии Нёрдс">
 			<h2>Nёrds Design Studio</h2>
@@ -155,7 +159,7 @@
 				ул. Б.Конюшенная, д.19/8
 			</p>
 			<p class="main-contacts">
-				тел.+7(812)275--75-75
+				тел.+7(812)275-75-75
 			</p>
 			<a href="#" class="button">Напишите нам</a>
 			<ul class="footer-social">
@@ -163,7 +167,7 @@
 				<li><a href="#" class="social-button social-button-fb">Фейсбук</a></li>
 				<li><a href="#" class="social-button social-button-in">Инстаграм</a></li>
 			</ul>
-				<p><b>Давайте дружить, это выгодно!</b></p>
+				<h3>Давайте дружить, это выгодно!</h3>
 				<p>Скидка 10% для друзей из социальных сетей.</p>
 		</footer>
 		<section class="modal modal-write">

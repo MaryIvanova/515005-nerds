@@ -3,10 +3,13 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-    	<nav class="main-navigation">
+  	<header class="main-header">
+  		<nav class="main-navigation">
     		<a class="main-header-logo">
     			<img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
   			</a>
@@ -22,30 +25,32 @@
   		</nav>
   	</header>
   	<main class="container">
-  		<h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
-  		<section class="slider">
-  			<h2 class="visually-hidden">Слайдер</h2>
-  			<ul class="slider-list">
-  				<li class="slider-item">
-  					<h3 class="slider-title">Долго, дорого, скрупулезно</h3>
-  					<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-  					<img src="img/nerds-index-slide1.png" width="760" height="431" alt="Слайдер-1">
-  					<a class="button" href="learn-more.html">Узнать больше</a>
+  		<div class="slider-group">
+  			<h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
+  			<section class="slider">
+  			  <h2 class="visually-hidden">Слайдер</h2>
+  			  <ul class="slider-list">
+  					<li class="slider-item">
+  						<h3 class="slider-title">Долго, дорого, скрупулезно</h3>
+  						<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+  						<img src="img/nerds-index-slide1.png" width="760" height="431" alt="Слайдер-1">
+  						<a class="button" href="learn-more.html">Узнать больше</a>
   					</li>
-  				<li class="slider-item">
-  					<h3 class="slider-title">Любим математику как никто другой</h3>
-  					<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-  					<img src="img/nerds-index-slide2.png" width="760" height="431" alt="Слайдер-2">
-  					<a class="button" href="learn-more.html">Узнать больше</a>
-  				</li>
-  				<li class="slider-item">
-  					<h3 class="slider-title">Только ночь, только хардкор</h3>
-  					<p>Работать днем, как все?Мы против этого. Ближе к полуночи работа только начинается.</p>
-  					<img src="img/nerds-index-slide3.png" width="760" height="431" alt="Слайдер-3">
-  					<a class="button" href="learn-more.html">Узнать больше</a>
-  				</li>
-  			</ul>
-    	</section>
+  					<li class="slider-item">
+  						<h3 class="slider-title">Любим математику как никто другой</h3>
+  						<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+  						<img src="img/nerds-index-slide2.png" width="760" height="431" alt="Слайдер-2">
+  						<a class="button" href="learn-more.html">Узнать больше</a>
+  					</li>
+  					<li class="slider-item">
+  						<h3 class="slider-title">Только ночь, только хардкор</h3>
+  						<p>Работать днем, как все?Мы против этого. Ближе к полуночи работа только начинается.</p>
+  						<img src="img/nerds-index-slide3.png" width="760" height="431" alt="Слайдер-3">
+  						<a class="button" href="learn-more.html">Узнать больше</a>
+  					</li>
+  				</ul>
+    		</section>
+    	</div>
     	<section class="services">
     		<h2 class="visually-hidden">Услуги</h2>
     		<ul class="services-list">
@@ -71,7 +76,7 @@
     	</section>
     	<section class="about-us">
     		<h2 class="visually-hidden">О нас</h2>
-    		<p><b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+    		<p class="about-studio">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
     		<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
     		<h3>Выполняем заказы на разработку:</h3>
     		<ul class="orders-list">
@@ -98,22 +103,21 @@
     		<h2 class="visually-hidden">Партнеры</h2>
     		<ul class="partners-list">
     			<li class="partners-item">
-    			<a href="htmlacademy.html"><img src="img/logo-1.png" width="260" height="180" alt="Логотип html-академии"></a>
+    				<a href="htmlacademy.html"><img src="img/logo-1.png" width="260" height="180" alt="Логотип html-академии"></a>
     			</li>
     			<li class="partners-item">
-    			<a href="borodinski.html"><img src="img/logo-2.png" width="260" height="180" alt="Логотип барбершопа Бородинский"></a>
+    				<a href="borodinski.html"><img src="img/logo-2.png" width="260" height="180" alt="Логотип барбершопа Бородинский"></a>
     			</li>
     			<li class="partners-item">
-    			<a href="pink.html"><img src="img/logo-3.png" width="260" height="180" alt="Логотип Пинк"></a>
+    				<a href="pink.html"><img src="img/logo-3.png" width="260" height="180" alt="Логотип Пинк"></a>
     			</li>
     			<li class="partners-item">
-    			<a href="mishka.html"><img src="img/logo-4.png" width="260" height="180" alt="Логотип Мишка"></a>
+    				<a href="mishka.html"><img src="img/logo-4.png" width="260" height="180" alt="Логотип Мишка"></a>
     			</li>
     		</ul>
     	</section>
    	</main>
     <footer class="main-footer">
-    <!--Здесь будет карта-->
     	<img src="img/map.jpg" width="1440" height="416" alt="Карта">
     	<img src="img/map-marker.png" width="367" height="190" alt="Местонахождение дизайн-студии Нёрдс">
     	<h2>Nёrds Design Studio</h2>
@@ -130,8 +134,8 @@
    			<li><a href="#" class="social-button social-button-fb">Фейсбук</a></li>
    			<li><a href="#" class="social-button social-button-in">Инстаграм</a></li>
    		</ul>
-   		<p><b>Давайте дружить, это выгодно!</b></p>
-   		<p>Скидка 10% для друзей из социальных сетей.</p>
+   		<h3>Давайте дружить, это выгодно!</h3>
+   		<p class="footer-item">Скидка 10% для друзей из социальных сетей.</p>
     </footer>
     <section class="modal modal-write">
    	 	<h2>Напишите нам</h2>
