@@ -36,7 +36,7 @@ a {
 	background-color: #eeeeee;
 	width: 100%;
 
-	display: flex;	
+	display: flex;
 }
 .container {
 	width: 1160px;
@@ -46,7 +46,6 @@ a {
 	flex-wrap: wrap;
 }
 .main-navigation .container {
-	display: flex;
 	justify-content: space-between;
 }
 .site-navigation {
@@ -79,24 +78,16 @@ a {
 	border-bottom: 1px solid #fb565a;
 }
 .page-title-wrapper {
-	width: 100%;
 	margin-bottom: 60px;
 	background-color: #eeeeee; 
 }
 .page-title {
-	width: 1160px;
-	padding: 0 20px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: center;
-}	
-.page-title h1 {
 	font-size: 55px;
 	line-height: 55px;
 	font-weight: 500;
 	color: #000000;
 	background-color: #eeeeee;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
 	padding-top: 76px;
 	padding-bottom: 100px;	
@@ -147,9 +138,6 @@ a {
 	color: #000000;
 }
 .catalog-columns {
-	width: 1160px;
-	padding: 0 20px;
-	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 }
@@ -192,6 +180,7 @@ a {
 }
 .filters {
 	width: 260px;
+	margin-right: 140px;
 }
 .filters-list {
 	border: none;
@@ -404,6 +393,8 @@ td {
 }
 .partners-list {
 	width: 1160px;
+	padding: 0;
+	margin: 0;
 	margin-bottom: 80px;
 	
 	display: flex;
