@@ -1,6 +1,6 @@
 html,
 body {
-	min-width: 1440px;
+	min-width: 1200px;
 	min-height: 2476px;
 }
 body {
@@ -176,7 +176,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   left: 230px;
   bottom: 104px;
-  z-index: 100;
+  z-index: 2;
   
   width: 160px;
   height: 18px;
@@ -357,17 +357,13 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
-	list-style: none;
+	list-style: none;	
 }
 .catalog-item {
 	position: relative;
 	width: 360px;
 	margin-right: 40px;	
 	margin-bottom: 68px;
-}
-.catalog-item:nth-child(5),
-.catalog-item:nth-child(6) {
-	margin-bottom: 55px;
 }
 .catalog-item:nth-child(2n) {
 	margin-right: 0;
@@ -716,7 +712,7 @@ input[type="radio"].visually-hidden {
 }
 .modal-buy {
 	position: absolute;
-	bottom: 4px;
+	bottom: 0;
 	left: 0;
 	width: 360px;
 	min-height: 230px;
@@ -761,9 +757,10 @@ input[type="radio"].visually-hidden {
 .pagination-list {
 	display: flex;
   flex-wrap: wrap;
-
+ 
 	padding: 0;
 	margin: 0;
+	margin-top: -14px;
 	margin-bottom: 57px;
 	list-style: none;	
 }
@@ -943,22 +940,33 @@ sup {
 }
 .main-footer {
 	position: relative;
+	z-index: 1;
 }
 .map {
-  margin-left: 71px;
+	width: 1440px;
+	margin: 0 auto;
+	position: relative;
 }
 .map-marker {
 	position: absolute;
 	top: 89px;
-	right: 460px;
+	right: 387px;
+	z-index: 2;
+}
+iframe {
+	position: absolute;
+	z-index: 3;
+	width: 100%;
+	border: none;
 }
 .contacts {
 	position: absolute;
 	top: 55px;
-	left: 212px;
+	left: 140px;
 	padding: 50px 50px 46px;
 	width: 220px;
 	background-color: #ffffff;
+	z-index: 4;
 }
 .main-contacts {
 	padding:0;
@@ -1038,9 +1046,49 @@ sup {
 	margin: 0;
 	margin-bottom: 76px;
 }
+@keyframes emergence {
+    0% {
+        transform: scale(0);
+        opacity: 0;       
+    }
+    50% {
+        transform: scale(1.1);  
+    }
+    80% {
+        transform: scale(0.8);
+        opacity: 0.5; 
+    }   
+    100% {
+        transform: scale(1);
+        opacity: 1; 
+    }       
+}
+@keyframes jolting {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    20%,
+    50% {
+        transform: rotate(-4deg);
+    }
+
+    35% {
+        transform: rotate(4deg);
+    }
+    
+    65% {
+        transform: rotate(2deg);
+    }
+
+    80% {
+        transform: rotate(-2deg);
+    }                          
+}
 .modal-write {
 	position: fixed;
-	z-index: 200;
+	z-index: 5;
 	bottom: 181px;
 	left: 50%;
 	width: 760px;
@@ -1065,6 +1113,13 @@ sup {
   padding: 0;
   margin: 0;
   margin-bottom: 20px;
+}
+.modal-show {
+	display: block;
+	animation: emergence 0.5s;
+}
+.modal-error {
+  animation: jolting 0.6s;
 }
 .user input[type="text"],
 .user textarea {
