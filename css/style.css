@@ -943,14 +943,14 @@ sup {
 	z-index: 1;
 }
 .map {
-	width: 1440px;
+	width: 1200px;
 	margin: 0 auto;
 	position: relative;
 }
 .map-marker {
 	position: absolute;
 	top: 89px;
-	right: 387px;
+	right: 267px;
 	z-index: 2;
 }
 iframe {
@@ -962,7 +962,7 @@ iframe {
 .contacts {
 	position: absolute;
 	top: 55px;
-	left: 140px;
+	left: 20px;
 	padding: 50px 50px 46px;
 	width: 220px;
 	background-color: #ffffff;
