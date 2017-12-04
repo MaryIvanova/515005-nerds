@@ -5,7 +5,7 @@
 		<title>HTML Academy: Нёрдс</title>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
@@ -26,11 +26,11 @@
 				</div>
 			</nav>
 		</header>
-			<div class="page-title-wrapper">
-				<div class="container">
-					<h1 class="page-title">Магазин готовых шаблонов</h1>
-				</div>
+		<div class="page-title-wrapper">
+			<div class="container">
+				<h1 class="page-title">Магазин готовых шаблонов</h1>
 			</div>
+		</div>
 		<main class="container">
 			<div class="catalog-columns">	
 				<section class="filters">
@@ -53,7 +53,7 @@
         			</div>
       			</fieldset>
       		</form>
-					<form class="filters" method="get" action="https://echo.htmlacademy.ru" oninput="costoutput.value=cost.value">
+					<form class="filters" method="get" action="https://echo.htmlacademy.ru">
 						<fieldset class="filters-list">
 							<legend class="filter-title">Сетка:</legend>
 							<ul class="filter-items">
@@ -118,7 +118,7 @@
 							<a href="sedona.html"><img src="img/img-sedona.jpg" width="360" height="576" alt="Информационный сайт для туристов Sedona"></a>	
 							<section class="modal modal-buy">
 								<div class="modal-item-buy">
-									<h3>Sedona</h3>
+									<h3><a href="sedona.html">Sedona</a></h3>
 									<p class="modal-description">Информационный сайт<br> для туристов</p>
 									<a href="#" class="button btn-modal">9 900 руб.</a>
 								</div>
@@ -128,7 +128,7 @@
 							<a href="pink.html"><img src="img/img-pink.jpg" width="360" height="576" alt="Продуктовый лендинг приложения для OS и Android"></a>
 							<section class="modal modal-buy">
 								<div class="modal-item-buy">
-									<h3>Pink App</h3>
+									<h3><a href="pink.html">Pink App</a></h3>
 									<p class="modal-description">Продуктовый лендинг приложения для OS и Android</p>
 									<a href="#" class="button btn-modal">9 900 руб.</a>
 								</div>
@@ -138,7 +138,7 @@
 							<a href="borodinski.html"><img src="img/img-barbershop.jpg" width="360" height="576" alt="Барбершоп Бородинский"></a>
 							<section class="modal modal-buy">
 								<div class="modal-item-buy">
-									<h3>Barbershop</h3>
+									<h3><a href="borodinski.html">Barbershop</a></h3>
 									<p class="modal-description">Сайт салоны красоты.<br> Для мужчин, да.</p>
 									<a href="#" class="button btn-modal">9 900 руб.</a>
 								</div>
@@ -148,7 +148,7 @@
 							<a href="mishka.html"><img src="img/img-mishka.jpg" width="360" height="576" alt="Интернет-магазин вязаных игрушек"></a>
 							<section class="modal modal-buy">
 								<div class="modal-item-buy">
-									<h3>Mishka</h3>
+									<h3><a href="mishka.html">Mishka</a></h3>
 									<p class="modal-description">Интернет-магазин<br> вязаных игрушек</p>
 									<a href="#" class="button btn-modal">9 900 руб.</a>
 								</div>
@@ -158,7 +158,7 @@
 							<a href="study.html"><img src="img/img-aplus.jpg" width="360" height="576" alt="Лендинг курсов повышения квалификации"></a>
 							<section class="modal modal-buy">
 								<div class="modal-item-buy">
-									<h3>A Plus</h3>
+									<h3><a href="study.html">A Plus</a></h3>
 									<p class="modal-description">Лендинг курсов повышения квалификации</p>
 									<a href="#" class="button btn-modal">9 900 руб.</a>
 								</div>
@@ -168,7 +168,7 @@
 							<a href="kvast.html"><img src="img/img-kvast.jpg" width="360" height="576" alt="Промо-сайт производителя крафтового кваса"></a>
 							<section class="modal modal-buy">
 								<div class="modal-item-buy">
-									<h3>Кваст</h3>
+									<h3><a href="kvast.html">Кваст</a></h3>
 									<p class="modal-description">Промо-сайт производителя крафтового кваса</p>
 									<a href="#" class="button btn-modal">9 900 руб.</a>
 								</div>
@@ -236,6 +236,6 @@
    			</form>
 	  	</section>
 	  </div>
-	  <script src="js/script.js"></script>
+	  <script src="js/scripts.min.js"></script>
 	</body>
 </html>
