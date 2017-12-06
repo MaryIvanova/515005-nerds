@@ -414,16 +414,16 @@ input[type="radio"].visually-hidden {
 .catalog-item:hover::before {
   opacity: 1;
   -webkit-box-shadow: 
-  -7px 0px 5px -2px #d2d2d2,
-   7px 0px 5px -2px #d2d2d2;
+  -6px 0px 15px -6px rgba(0,1,1,.25),
+   6px 0px 15px -6px rgba(0,1,1,.25);
           box-shadow: 
-  -7px 0px 5px -2px #d2d2d2,
-   7px 0px 5px -2px #d2d2d2;
+  -6px 0px 15px -6px rgba(0,1,1,.25),
+   6px 0px 15px -6px rgba(0,1,1,.25);
 }
 .catalog-item:focus,
 .catalog-item:hover {
-  -webkit-box-shadow: 0px 3px 5px 5px #d2d2d2;
-          box-shadow: 0px 3px 5px 5px #d2d2d2;
+  -webkit-box-shadow: 0 6px 15px rgba(0,1,1,.25);
+          box-shadow: 0 6px 15px rgba(0,1,1,.25);
 }
 .cost-filter-item {
   margin: 0;
@@ -696,12 +696,13 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   font-weight:700;
   margin: 0;
-  margin-top: 23px;
+  margin-top: 20px;
   margin-bottom: 18px;
 }
 .services-item p {
   margin: 0;
   margin-bottom: 32px;
+  padding-right: 40px;
 }
 .button {
   font: inherit;
@@ -758,23 +759,17 @@ input[type="radio"].visually-hidden {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 360px;
-  min-height: 230px;
+  width: 240px;
   background-color: #eeeeee;
   text-align: center;
-  vertical-align: middle;
   z-index: 1;
+  padding: 10px 60px 46px;
 
-  display: none;
+  display: block;
 }
-.modal-item-buy {
-  width: 240px;
-  padding: 28px 60px 43px;
-}
-.modal-buy h3 a {
+.modal-title {
   margin: 0;
   padding: 0;
-  padding-bottom: 15px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -1087,7 +1082,7 @@ iframe {
   background-color: #e74246;
 }
 .social-button:active {
-  background-color: #e74246;
+  background-color: #d7373b;
   -webkit-box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
           box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
