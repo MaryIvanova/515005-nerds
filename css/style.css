@@ -765,7 +765,7 @@ input[type="radio"].visually-hidden {
   z-index: 1;
   padding: 10px 60px 46px;
 
-  display: block;
+  display: none;
 }
 .modal-title {
   margin: 0;
@@ -786,6 +786,9 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   font-weight: 400;
   color: #666666;
+}
+.description {
+  padding: 0 20px 30px;
 }
 .btn-modal {
   padding: 16px 61px;
@@ -1249,6 +1252,9 @@ iframe {
 .modal-error {
   -webkit-animation: jolting 0.6s;
           animation: jolting 0.6s;
+}
+.user label {
+  display: block;
 }
 .user input[type="text"],
 .user textarea {
